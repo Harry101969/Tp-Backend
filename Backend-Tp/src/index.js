@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 dotenv.config({ path: '../.env' });
 
 const app = express();
-const port = process.env.PORT
+const port = process.env.PORT || 3006
 app.get('/', async (req, res) => {
     const printing = [
         { id: 1, title: 'Hello1' },
