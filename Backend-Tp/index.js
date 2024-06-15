@@ -1,9 +1,10 @@
 const express = require('express');
 const dotenv = require('dotenv');
-dotenv.config({ path: '../.env' });
+
+dotenv.config({ path: './.env' });
 
 const app = express();
-const port = process.env.PORT || 3006
+const port = process.env.PORT
 app.get('/', async (req, res) => {
     const printing = [
         { id: 1, title: 'Hello1' },
